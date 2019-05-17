@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Glitch Atom One Dark Pro
-// @namespace    foo.com
+// @namespace    https://github.com/jarvis394/glitch-theme-aodp
 // @version      0.3
 // @description  Atom One Dark Pro Theme for Glitch's Editor
 // @author       jarvis394
 // @match        https://glitch.com/edit/
 // @run-at       document-start
 // @grant        none
-// @updateURL    https://foo.com/user/project/raw/develop/main.user.js
+// @updateURL    https://raw.githubusercontent.com/jarvis394/glitch-theme-aodp/master/atom_one_dark_pro.theme.js
 // ==/UserScript==
 
 (function () {
@@ -48,7 +48,7 @@
   addLink('https://code.cdn.mozilla.net/fonts/fira.css')
 
   // Font and colors
-  addCSS(`    
+  addCSS(`
 .CodeMirror-code .cm-keyword,.CodeMirror-code .cm-def,.CodeMirror-code .cm-comment,.CodeMirror-code .cm-string,.CodeMirror-code .cm-operator,.CodeMirror-code .cm-variable {
   font-weight: normal;
   font-style: normal;
@@ -159,8 +159,8 @@
 
   // Editor's background
   addCSS(`
-    .text-editor .CodeMirror-scrollbar-filler, 
-    .editor-helper, .text-editor .CodeMirror-gutters, 
+    .text-editor .CodeMirror-scrollbar-filler,
+    .editor-helper, .text-editor .CodeMirror-gutters,
     .text-editor .CodeMirror-scroll {
       background-color: #282C34 !important;
     }
@@ -168,8 +168,8 @@
 
   // Search field
   addCSS(`
-    .search-input, 
-    .replace-input, 
+    .search-input,
+    .replace-input,
     .CodeMirror-search-field {
       background-color: #1B1D23 !important;
       border-color: #181A1F !important;
